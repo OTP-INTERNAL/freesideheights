@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!-- Website developed by Violet Designs | violetdesigns.net -->
+<!-- ^^^ Huge thanks to Vi! -Pines ^^^ -->
+<!-- Also , small disclaimer, none of my NSFW content will be uploaded here until the 18+ screen is implemented.-->
+<html>
+<head>
+    <title>Pines' Corner of the Net</title>
+	<link rel="icon" type="image/x-icon" href="/IA/docannoyed.ico">
+    <meta property="og:title" content="Pines' Corner of the Net" />
+	<meta property="og:description" content="Welcome to Pines' Corner of the Net! A space for my comics, art, and whatever have you! Site's currently still a work in progress, but feel free to have a look around!" />
+	<link rel="stylesheet" href="index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="modal.css">
+	<link rel="stylesheet" href="mobile.css">
+	<script type="text/javascript" src="mobile.js"></script>
+</head>
+
+
+<body>
+	<marquee width="100%" direction="left" height="25px" bgcolor="black" style="color: rgb(255, 131, 255); font-size: 18px; font-family: 'AnimeInept';" scrollamount="7">
+<b>[Alert Notice] This site is still undergoing some maintenance, so some features may not work as intended. Please check back later for updates! Also, some assets are temporary, and are subject to change at a later date. And uh... if you're still reading this, go watch Project Hail Mary, pretty good ngl.</b>
+</marquee>
+	<div class="d-flex text-center mainBody" style="height: 90vh; width: 90vw;">
+		<div class="col-lg-auto menuColumn mr-4" style="max-height:100vh;">
+			<div class="container logo">
+				<img src="homepagelogo.png" class="homepageLogo">
+			</div>
+			<!--SIDEBAR MENU-->
+			<div class="container sidebar text-center text-wrap">
+				<div class="menubox">
+					<div class="navBorder">
+						<div class="d-flex flex-column justify-content-between nav">
+							<div class="naventry mt-3" id="home" onClick="switchContent(this,this.id);" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+						      <img class="navimg" src="assets/sidebar/home2.png" style="max-height: 100%; max-width: 100%; object-fit: contain">
+						    </div>
+						    <div class="naventry" id="commissions" onClick="switchContent(this,this.id);" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+						      <img class="navimg" src="assets/sidebar/comms.png" style="max-height: 100%; max-width: 100%; object-fit: contain">
+						    </div>
+						    <div class="naventry" id="freeside" onClick="switchContent(this,this.id);" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+						      <img class="navimg" src="assets/sidebar/freesideheights.png" style="max-height: 100%; max-width: 100%; object-fit: contain">
+						    </div>
+						    <a> <!-- href="https://bsky.app/profile/pines.freesideheights.com" -->
+							    <div class="naventry" id="socials" onClick="window.location='https://bsky.app/profile/pines.freesideheights.com';" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+							      <img class="navimg" src="assets/sidebar/bsky.png" style="max-height: 100%; max-width: 100%; object-fit: contain">
+							    </div>
+							</a>
+						    <div class="naventry" id="comics" onClick="switchContent(this,this.id);" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+						      <img class="navimg" src="assets/sidebar/vault.png" style="max-height: 100%; max-width: 100%; object-fit: contain">
+						    </div>
+						    <div class="naventry mb-3" style="display:flex; align-items:start;" id="gallery" onClick="switchContent(this,this.id);" onmouseover="highlightButton(this);" onmouseout="unhighlightButton(this);">
+						      <img class="navimg" src="assets/sidebar/gallery.png" style="max-height: 100%; max-width: 80%; object-fit: contain">
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bodyColumn mr-5">
+			<div class="container bodyContainer text-center text-wrap">
+			    	<div class="container bannerContainer mt-4 pb-4">
+				    	<img class="mainBanner" src="assets/banners/Home_Banner.png">
+					</div>
+
+					<!--MAIN CONTENT BOXES-->
+					<div class="container contentContainer mt-5 text-start p-2">
+
+						<!--HOME BOX-->
+						<div id="contentHome" class="contentBox border border-3 border-black bg-white text-left pcOnly">
+							<div class="dateContainer">
+								<p class="mt-2">‎ Updated on 7/8/2026</p>
+							</div>
+							<div class="d-flex flex-column justify-content-between p-2 homeContainer mt-3">
+								<div class="container-fluid homeText">
+									<h1 class="titleFont"><i>Welcome!</i></h1><h3>‎ I'm OverThePines, career comic writer, two-time award winning artist, and a fanatic of the color "cadet blue".</h3>
+									<h3>Site's currently still a work in progress, but welcome to the first preview!</h3>
+								</div> 
+							
+								<div class="container-fluid projectContainer">
+									<div class="d-flex bottom-0">
+										<img class="homepageComic" src="assets/frontpage-comic.png">
+										<div class="d-flex flex-column p-2">
+											<h2 class="titleFont">Active - Work In Progress Prologue</h2>
+											<h1 class="titleFont">Project Parsec</h1>
+											<h3>So you wanna know how it all started, huh?</h3>
+											<h3>Project Parsec is the catalyst for Freeside Heights, and everything that comes after.</h3>
+											<h3>Find out how the Biohane Lab incident began, right here.</h3>
+											<div class="d-flex">
+												<h2 class="titleFont" style="border: 5px solid pink; border-radius: 10px; padding: 20px">Coming Soon!</h2>
+												<!--<h2 class="titleFont" style="border: 5px solid pink; border-radius: 10px; padding: 20px">PDF Download</h2>-->
+											</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!--COMMISSIONS BOX-->
+						<div id="contentCommissions" class="contentBox border border-3 border-black bg-white text-center pcOnly" style="visibility: hidden;">
+							<div class="dateContainer">
+								<p class="mt-2">‎ Updated on 7/8/2026</p>
+							</div>
+							<div class="container-fluid d-flex justify-content-around flex-column priceContainer">
+								<div class="d-flex m-3 align-items-center justify-content-around priceRow">
+									<div class="ms-2 me-4" style="cursor: pointer;" onClick="window.location='https://artistree.io/overthepines#21ba4438-f00e-4566-be14-ff1fa4ef775d';"><h1>$40-55</h1></div>
+									<div class="commDesc ms-3" style="cursor: pointer; text-wrap: balance;" onClick="window.location='https://artistree.io/overthepines#21ba4438-f00e-4566-be14-ff1fa4ef775d';"><h3>PORTRAIT</h3>A 1400x1800 portrait image, with coloring and shading included. Maximum 2 characters per drawing.</div>
+									<img style="max-width:10%; cursor:pointer;"src="assets/comms/portrait1.png" data-bs-toggle="modal" data-bs-slide-to="0" data-bs-target="#portraitsModal" onclick="carouselSlideToNum('carouselPortraitInner','0')">
+									<img style="max-width:10%; cursor:pointer;"src="assets/comms/portrait2.png" data-bs-toggle="modal" data-bs-slide-to="1" data-bs-target="#portraitsModal" onclick="carouselSlideToNum('carouselPortraitInner','1')">
+									<img style="max-width:10%; cursor:pointer;"src="assets/comms/portrait3.png" data-bs-toggle="modal" data-bs-slide-to="2" data-bs-target="#portraitsModal" onclick="carouselSlideToNum('carouselPortraitInner','2')">
+								</div>
+								<div class="d-flex m-3 align-items-center justify-content-around priceRow">
+									<div class="ms-1 me-4" style="cursor: pointer;" onClick="window.location='https://artistree.io/overthepines#f9a8e100-bb23-423c-aa18-e4993795e20c';"><h1>$70-130</h1></div>
+									<div class="commDesc ms-3" style="cursor: pointer; text-wrap: balance;" onClick="window.location='https://artistree.io/overthepines#f9a8e100-bb23-423c-aa18-e4993795e20c';"><h3>CANVAS</h3>A 16:9 image, 1920x1080. Perfect for desktop backgrounds and banners! Coloring, shading, and any added effects included. Maximum 5 characters per drawing.</div>
+									<img style="max-width:12%;  object-fit: cover; cursor:pointer;" src="assets/comms/canvas1.png" data-bs-toggle="modal" data-bs-slide-to="0" data-bs-target="#canvasModal" onclick="carouselSlideToNum('carouselCanvasInner','0')">
+									<img style="max-width:12%; object-fit: cover; cursor:pointer;"src="assets/comms/canvas2.png" data-bs-toggle="modal" data-bs-slide-to="1" data-bs-target="#canvasModal" onclick="carouselSlideToNum('carouselCanvasInner','1')">
+									<img style="max-width:12%; object-fit: cover; cursor:pointer;"src="assets/comms/canvas3.png" data-bs-toggle="modal" data-bs-slide-to="2" data-bs-target="#canvasModal" onclick="carouselSlideToNum('carouselCanvasInner','2')">
+								</div>
+								<div class="d-flex m-3 align-items-center justify-content-between priceRow">
+									<div class="ms-4 me-2" style="cursor: pointer;" onClick="window.location='https://artistree.io/overthepines#b8efa32f-e4dc-4f75-84d0-49d44f7b4504';"><h1>$125</h1></div>
+									<div class="commDesc ms-5" style="cursor: pointer; text-wrap: balance;" onClick="window.location='https://artistree.io/overthepines#b8efa32f-e4dc-4f75-84d0-49d44f7b4504';"><h3>REFERENCE SHEET</h3>A FULL reference sheet for your OC! Comes with two full bodies (front and back), stylized half body and 1-2 icons.</div>
+									<img style="max-width:12%; object-fit: cover; cursor:pointer;"src="assets/comms/ref1.png" data-bs-toggle="modal" data-bs-slide-to="0" data-bs-target="#refModal" onclick="carouselSlideToNum('carouselRefInner','0')">
+									<img style="max-width:12%; object-fit: cover; cursor:pointer;"src="assets/comms/ref2.png" data-bs-toggle="modal" data-bs-slide-to="1" data-bs-target="#refModal" onclick="carouselSlideToNum('carouselRefInner','1')">
+									<img style="max-width:12%; object-fit: cover; cursor:pointer;"src="assets/comms/ref3.png" data-bs-toggle="modal" data-bs-slide-to="2" data-bs-target="#refModal" onclick="carouselSlideToNum('carouselRefInner','2')">
+								</div>
+							</div>
+							<a href="https://artistree.io/overthepines"><img style="max-width:30%;"src="assets/sidebar/artistreebutton.png"></a>
+							<a href="https://trello.com/b/TBSkBGMq/commissions-board"><img style="max-width:30%;"src="assets/sidebar/trellobutton.png"></a>
+						</div>
+
+
+						<!--GALLERY BOX-->
+						<div id= "contentGallery" class="contentBox border border-3 border-black bg-white" style="visibility: hidden; overflow: scroll;">
+							<div class="dateContainer">
+								<p class="mt-2">‎ Updated on 7/8/2026</p>
+							</div>
+							<div class="m-3">
+								<input class="me-3 galleryBar" type="text" placeholder="Search..." oninput="searchUpdate(this.value);" id="gallerySearch"/>
+								<img class="galleryBar" onclick="toggleNSFW();" src="assets/gallery/button-off.png" style="user-select: none; cursor: pointer;" id="nsfwButton">
+								<h2 class="galleryBar" onclick="toggleNSFW();" style="user-select: none; cursor: pointer;">Show NSFW</h2>
+							</div>
+							<div class="d-flex flex-wrap align-items-center justify-content-around mainGallery">
+								<!--BEGIN AUTOGENERATED GALLERY-->
+								Shit's Fucked, New Gallery System Soon. - Pines
+								<!--END AUTOGENERATED GALLERY-->
+							</div>
+				    	</div>
+
+				    	<!--UNDER CONSTRUCTION NOTICE-->
+				    	<div id="contentConstruction" class="contentBox border border-3 border-black bg-white text-center" style="visibility: hidden;">
+							<div class="dateContainer">
+								<p class="mt-2">‎ [Not Available, come back later!]</p>
+							</div>
+							<div class="d-flex justify-content-center" style="height: 100%;">
+				    			<div style="font-size: 8vh; position: absolute; top: 35%;">Coming soon...</div>
+				    		</div>
+				    	</div>
+
+
+
+						<!-- MOBILE CONTENT-->
+						<!--HOME BOX MOBILE-->
+						<div id="contentHomeMobile" class="contentBox border border-3 border-black bg-white text-left mobileOnly">
+							<div class="container dateContainerMobile">
+								<p class="mt-2">Updated on 7/8/2026</p>
+							</div>
+							<div class="d-flex flex-column justify-content-between p-2 homeContainer mt-3">
+								<div class="container-fluid homeText">
+									<h1 class="titleFont">Welcome! </h1><h3>I'm OverThePines, career comic writer, two-time award winning artist, and a fanatic of the color "cadet blue".</h3>
+									<h3>Site's currently still a work in progress, but welcome to the first preview!</h3>
+								</div>
+								<div class="container-fluid projectContainer">
+											<div class="d-flex flex-column p-2 text-center">
+												<h2 class="titleFont">Active - In Progress Series</h2>
+												<h1 class="titleFont">Project Parsec</h1>
+												<h3>So you wanna know how it all started huh?</h3>
+												<h3>Project Parsec is the catalyst for Freeside Heights, and everything that comes after.</h3>
+												<h3>Find out how the Biohane Lab incident began, right here.</h3>
+											</div>
+									<div class="d-flex">
+										<img src="assets/frontpage-comic.png" style="max-height: clamp(100px,35vh,350px);">
+										<div class="d-flex flex-column p-2">
+											<h2 class="titleFont" style="border: 5px solid pink; border-radius: 10px; padding: 20px">Read Here (Coming Soon)</h2>
+											<h2 class="titleFont" style="border: 5px solid pink; border-radius: 10px; padding: 20px">PDF Download (Coming Soon)</h2>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--COMMISSIONS BOX MOBILE -->
+						<div id="contentCommissionsMobile" class="contentBox border border-3 border-black bg-white text-center mobileOnly" style="visibility: hidden;">
+							<div class="container dateContainerMobile">
+								<p class="mt-2">Updated on XX/XX/XXXX</p>
+							</div>
+							<h1>Portraits [$40-55]</h1>
+							<div>A 1400x1800 portrait image, with coloring and shading included. Maximum 2 characters per drawing.</div>
+							<img class="commsImageMobile" src="assets/comms/portrait1.png">
+							<img class="commsImageMobile" src="assets/comms/portrait2.png">
+							<img class="commsImageMobile" src="assets/comms/portrait3.png">
+							<h1>Canvas [$70-130]</h1>
+							<div>A 16:9 image, 1920x1080. Perfect for desktop backgrounds and banners! Coloring, shading, and any added effects included. Maximum 5 characters per drawing.</div>
+							<img class="commsImageMobile" src="assets/comms/canvas1.png">
+							<img class="commsImageMobile" src="assets/comms/canvas2.png">
+							<img class="commsImageMobile" src="assets/comms/canvas3.png">
+							<h1>Reference Sheets [$125]</h1>
+							<div>A FULL reference sheet for your OC! Comes with two full bodies (front and back), stylized half body and 1-2 icons.</div>
+							<img class="commsImageMobile" src="assets/comms/ref1.png">
+							<img class="commsImageMobile" src="assets/comms/ref2.png">
+							<img class="commsImageMobile" src="assets/comms/ref3.png">
+							<h1>More information on commissions here!</h1>
+							<a href="https://artistree.io/overthepines"><img style="max-width:50%;"src="assets/sidebar/artistreebutton.png"></a>
+							<a href="https://trello.com/b/TBSkBGMq/commissions-board"><img style="max-width:50%;"src="assets/sidebar/trellobutton.png"></a>
+						</div>
+				    </div>
+			</div>
+		</div>
+	<!--RIGHT BANNER-->
+	<div class="col-lg-auto bannerColumn">
+		<!--Banner created with assets from Cap Cool @ flaticon.com-->
+		<img class="sideBanner mt-4 border border-3 border-black" src="assets/banners/sidebanner.png">
+	</div>
+	</div>
+
+
+
+
+	<!-- GALLERY MODAL -->
+	<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		        	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	</div>
+		      	<div class="modal-body">
+		    		<div class="d-flex justify-content-center">
+		    			<a href="assets/comms/portrait1.png" id="galleryImageLink">
+		      				<img id="galleryImage" src="assets/comms/portrait1.png" class="d-block" style="max-height: 60vh;">
+		      			</a>
+		  			</div>
+		  		</div>
+		   		<div class="modal-footer galleryFooter">
+		   			<div class="container galleryFooterContainer">
+		   				<div id="galleryTitle" class="h1">Title</div>
+		   				<div id="galleryDesc" class="h2">Art description</div>
+		   				<div id="galleryDate">Uploaded 1/1/1970</div>
+		   			</div>
+		     	</div>
+		    </div>
+		</div>
+	</div>
+
+
+	<!--COMMISSIONS POPUPS-->	
+	<!--PORTRAITS-->
+	<div class="modal fade" id="portraitsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+
+			<div id="carouselPortrait" class="carousel slide">
+			  <div id="carouselPortraitInner" class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/portrait1.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/portrait2.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/portrait3.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortrait" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselPortrait" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--CANVAS-->
+	<div class="modal modal-xl fade" id="canvasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+
+			<div id="carouselCanvas" class="carousel slide">
+			  <div id="carouselCanvasInner" class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/canvas1.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/canvas2.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/canvas3.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCanvas" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselCanvas" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--REF SHEETS-->
+	<div class="modal modal-xl fade" id="refModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+
+			<div id="carouselRef" class="carousel slide">
+			  <div id="carouselRefInner" class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/ref1.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/ref2.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="d-flex justify-content-center">
+			      		<img src="assets/comms/ref3.png" class="d-block w-100">
+			  		</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselRef" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselRef" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+
+
+</html>

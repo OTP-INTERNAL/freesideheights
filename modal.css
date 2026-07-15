@@ -1,0 +1,18 @@
+.modal-content, .modal-header, .modal-footer {
+	background: rgb(0,0,0,0);
+	border: none;
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 10vw;
+  height: 10vw;
+}
+
+.carousel-inner {
+	height: 70vh;
+}
+
+.carousel-item img{
+	margin: auto;
+}

@@ -1,0 +1,113 @@
+@media (pointer:none), (pointer:coarse)  { 
+
+	body h1, h2, h3, div, p {
+		font-size: 30px !important;
+	}
+
+	.bodyContainer {
+		max-width: 100vw !important;
+	}
+
+	.bannerColumn {
+		display: none;
+	}
+
+	.contentBox, .contentContainer {
+		width: 90vw;
+		left: -10vw;
+		font-size: 5px;
+		margin-top: 30px;
+	}
+
+	.homeContainer, .priceRow h1, h2, h3, div, p {
+		font-size: 30px !important;
+	}
+
+	.titleFont {
+		font-size: 30px !important;
+	}
+
+	.mainBanner {
+		width: 65vw;
+	}
+
+	.homepageLogo {
+		width: 30vw;
+	}
+
+	.mainBody {
+		display: flex !important;
+  		flex-direction: column !important;
+	}
+
+	.menuColumn {
+		width: 100vw;
+		max-height:30vh;
+	}
+
+	.navBorder {
+		height: 18vh;
+		width: 95vw;
+		left: -16%;
+		clip-path: polygon(45px 0px, calc(100% - 45px) 0px, 100% 50%, calc(100% - 45px) 100%, 45px 100%, 0px 50%);
+	}
+
+	.nav {
+		height: 15vh;
+		width: 90vw;
+		left: 2.5%;
+		top: 8%;
+		clip-path: polygon(38px 0px, calc(100% - 38px) 0px, 100% 50%, calc(100% - 38px) 100%, 38px 100%, 0px 50%);
+
+		display: grid !important;
+		grid-template-columns: 1fr 1fr;
+		align-items: center !important;
+	}
+
+	.naventry {
+		height: 4vh !important;
+	}
+
+	.homeText h3 {
+		font-size: 2.2vh !important;
+	}
+
+	.homeText h1 {
+		font-size: 3vh !important;
+	}
+
+	.pcOnly {
+		display: none !important;
+	}
+
+	.mobileOnly {
+		display: block !important;
+	}
+
+	.dateContainer {
+		height: 7%;
+		top: -7%;
+	}
+
+	.galleryPanel {
+		width: 40%;
+		height: 20vh;
+	}
+
+	.mainBody .bodyColumn {
+		width: 90vw !important;
+	}
+
+	.contentBox {
+		margin-left: 15vw;
+	}
+
+	.mainBanner {
+		width: 80vw;
+	}
+
+	.commsImageMobile {
+		max-width: 32% !important;
+		max-height: 15% !important;
+	}
+}
